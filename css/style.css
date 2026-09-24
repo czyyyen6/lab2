@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+nav,
+.card-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-hero,
+.card {
+    width: 100%;
+}
+
+.card {
+    flex-basis: 100%;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+nav,
+.card-grid {
+    gap: 12px;
+}
+
+.bio-hero {
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #999;
+    transition: border-color 0.2s;
+}
+
+.card:hover {
+    border-color: #ac2d7e;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        flex-direction: row;
+     
