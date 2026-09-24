@@ -38,7 +38,7 @@ nav,
 
 .card {
     padding: 16px;
-    border: 1px solid #999;
+    border: 1px solid #999999;
     transition: border-color 0.2s;
 }
 
@@ -49,4 +49,20 @@ nav,
 @media (min-width: 768px) {
     .card-grid {
         flex-direction: row;
-     
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+
+    header,
+    nav {
+        flex-direction: row;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
